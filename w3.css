@@ -1,0 +1,446 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*共用樣式*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 60px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mr-8 {
+  margin-right: 8px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.fz-40 {
+  font-size: 40px;
+}
+
+.pt-120 {
+  padding-top: 120px;
+}
+/*↓↓header↓↓*/
+.header {
+  background: #fff;
+  border-bottom: 1px solid #f1f1f1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header-inner {
+  display: flex;
+}
+
+.header-inner a {
+  display: block;
+}
+
+.header img {
+  margin-right: 318px;
+}
+
+/*↓↓banner↓↓*/
+.body-container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.banner-container {
+  background-color: #fafafa;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-content {
+  margin-left: 18px;
+}
+.card-content h2 {
+  margin-top: 16px;
+  font-size: 28px;
+  color: #3b3b3b;
+  margin-bottom: 8px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.title-content {
+  max-width: 670px;
+  padding: 54px 71px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.title-content h2 {
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #1e1e1e;
+}
+/*↓↓body↓↓*/
+
+.card {
+  margin: 40px 0;
+  width: 48%;
+}
+
+.card img {
+  border: 1px solid white;
+  border-radius: 8px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.content_list {
+  display: flex;
+}
+
+.content_list li {
+  display: flex;
+  margin-right: 16px;
+  background: #f1f1f1;
+  margin-top: 24px;
+  border-radius: 16px;
+  padding: 4px 12px;
+}
+
+.card-content p {
+  color: #919191;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.title_p {
+  margin: 36px 24px;
+}
+
+.navbar-list li a {
+  text-decoration: none;
+  color: black;
+}
+
+.img-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.img-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.mark {
+  position: relative;
+}
+
+.mark img {
+  position: absolute;
+  right: 0px;
+  bottom: -1px;
+}
+
+.title-list ul {
+  display: flex;
+  color: #5b5b5b;
+  margin: 0 auto;
+  justify-content: center;
+
+  padding-top: 24px;
+}
+.title-list li {
+  width: 50%;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.title-list hr {
+  width: 24px;
+  border: 2px solid #c1c1c1;
+}
+
+/*↓↓footer↓↓*/
+
+.footer {
+  padding: 80px 132px;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-infomation {
+  margin-bottom: 24px;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-icon {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 24px;
+  padding: 8px 0 8px 24px;
+  background: #fff;
+  color: #3b3b3b;
+  font-size: 20px;
+  border-radius: 8px;
+
+  &:hover {
+    color: #fff;
+    background: #000;
+  }
+}
+
+.page-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 120px;
+}
+
+.page-tag a:hover {
+  background: black;
+  color: white;
+}
+
+.page-tag a {
+  border-radius: 4px;
+  display: block;
+  text-decoration: none;
+  padding: 2px 13px 2px 13px;
+  font-size: 24px;
+  color: #3b3b3b;
+  margin: 8px;
+}
+
+/*參考老師*/
+@media (max-width: 1296px) {
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-list {
+    display: none;
+  }
+  .card {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-box {
+    flex-direction: column;
+  }
+  .footer-logo {
+    width: 120px;
+  }
+
+  .footer-container {
+    text-align: center;
+  }
+
+  .contact-box {
+    text-align: center;
+    padding-bottom: 40px;
+    width: 100%;
+  }
+
+  .title-ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content_list {
+    justify-content: center;
+  }
+
+  .footer-infomation {
+    font-size: 20px;
+  }
+
+  .footer-icon {
+    font-size: 20px;
+  }
+  .container {
+    padding-bottom: 40px;
+  }
+  .footer-rightbox {
+    text-align: center;
+  }
+}
